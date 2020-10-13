@@ -1,0 +1,54 @@
+<!-- Code By Webdevtrick ( https://webdevtrick.com ) -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pop-up Contact Form | Webdevtrick.com</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button type="button" class="btn" id="c-btn">Open Contact Form</button>
+
+    <div id="contact">
+      <form action="#">
+        <ul>
+          <h1>Contact</h1>
+          <li>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="&#xf2c0; Full name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="&#xf003; Email"
+            />
+          </li>
+          <li>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="&#xf040; Your message"
+            ></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Send message" class="btn" id="submit" />
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="function.js"></script>
+  </body>
+</html>

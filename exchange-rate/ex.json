@@ -1,0 +1,26 @@
+// [
+//     {
+//         "cur": "ind",
+//         "value": 1,
+//         "valid": true
+//     },
+//     {
+//         "cur": "usd",
+//         "value": 2,
+//         "valid": true
+//     },
+//     {
+//         "cur": "eur",
+//         "value": 3,
+//         "valid": true
+//     }
+// ]
+// getting usd in html 
+// fetch data from Json in html using js script
+// js script to fetch
+// function exchange() {
+//     fetch('ex.json')
+//         .then(respo => respo.json())
+//         .then(data => document.body.innerHTML = data[1].cur);
+// }
+// exchange()
