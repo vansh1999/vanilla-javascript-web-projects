@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="user" \>
+        </div>
+        <ul>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <h1>My Landing Page</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!
+        </p>
+
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+
+
+
+    <div class="container">
+
+        <h2>Why you should get landing page</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut doloremque unde dolorum nulla repudiandae
+            laudantium quaerat harum, possimus deleniti?</p>
+
+        <h2>Tell me more</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam enim quidem itaque earum nisi sint
+            quibusdam provident magni dignissimos vel nostrum placeat, asperiores magnam nemo ullam molestias
+            repudiandae iure quia molestiae. Tempora hic fugiat eos molestiae nisi repudiandae saepe tempore! Eius
+            facilis, facere iusto non voluptatum soluta unde corporis.</p>
+
+        <h3>Benifits</h3>
+        <li>More conversion rate</li>
+        <li>positon your offering</li>
+        <li>speak more with less</li>
+
+        <h3>30 days money back</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, odio.</p>
+    </div>
+
+
+    <!-- Form Modal -->
+
+    <div class="modal-container" id="modal">
+        <!-- for modal background -->
+        <div class="modal" id="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+
+            <div class="modal-content">
+                <p>Sign up with us to 10X your leads and Sales</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Enter Name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter Email">
+                    </div>
+
+                    <div>
+                        <label for="number">Number</label>
+                        <input type="text" id="number" class="form-input" placeholder="Enter Number">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
