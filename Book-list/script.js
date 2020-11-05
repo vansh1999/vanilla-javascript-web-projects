@@ -24,7 +24,9 @@ class UI {
 
 
 
-        const books = Store.getBooks();
+        const books = Store.getBooks()
+
+
         books.forEach((book) => UI.addBookToList(book));
     }
 
@@ -68,6 +70,7 @@ class UI {
     }
 }
 
+// Store Class: Handles Storage
 class Store {
     static getBooks() {
         let books;
@@ -76,25 +79,26 @@ class Store {
         } else {
             books = JSON.parse(localStorage.getItem('books'));
         }
+
         return books;
     }
 
-    static addBooks(book) {
+    static addBook(book) {
         const books = Store.getBooks();
-        book.push(book);
+        books.push(book);
         localStorage.setItem('books', JSON.stringify(books));
-
     }
 
-    static removeBooks(isbn) {
+    static removeBook(isbn) {
         const books = Store.getBooks();
+
         books.forEach((book, index) => {
             if (book.isbn === isbn) {
                 books.splice(index, 1);
             }
         });
-        localStorage.setItem('books', JSON.stringify(books));
 
+        localStorage.setItem('books', JSON.stringify(books));
     }
 }
 
