@@ -4,6 +4,8 @@ var ounce = document.getElementById('ounce');
 var gm = document.getElementById('gm');
 var kg = document.getElementById('kg');
 
+let weight_arr = [];
+
 function convert(e) {
     e.preventDefault();
     let pound = input_weight.value;
@@ -26,12 +28,16 @@ function convert(e) {
         document.getElementById("kg-class").classList.add('invisible');
     }
 
-
-
+    weight_arr.push(pound);
+    localStorage.setItem('weights', JSON.stringify(weight_arr));
+    weight_data = JSON.parse(localStorage.getItem('weights'));
 
 
 }
 
 input_weight.addEventListener('change', convert);
+
+
+
 
 
