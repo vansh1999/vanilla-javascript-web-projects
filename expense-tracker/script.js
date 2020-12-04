@@ -8,12 +8,12 @@ text = document.getElementById('text');
 amount = document.getElementById('amount');
 
 
-var dummyTransactions = [
-    { id: 1, text: 'add1', amount: 100 },
-    { id: 2, text: 'min1', amount: -50 },
-    { id: 3, text: 'add2', amount: 200 },
-    { id: 4, text: 'min2', amount: -100 },
-]
+// var dummyTransactions = [
+//     { id: 1, text: 'add1', amount: 100 },
+//     { id: 2, text: 'min1', amount: -50 },
+//     { id: 3, text: 'add2', amount: 200 },
+//     { id: 4, text: 'min2', amount: -100 },
+// ]
 
 const localStorageTransaction = JSON.parse(localStorage.getItem('Transaction'));
 
